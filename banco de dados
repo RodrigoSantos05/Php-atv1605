@@ -1,0 +1,13 @@
+create database aula1605;
+use aula1605;
+
+
+create table tbUser
+(
+	cdUser int primary key auto_increment,
+    nmUser varchar(100),
+    dsSenha varchar(20)
+);
+
+insert into tbUser(nmUser,dsSenha) values ('rodrigo', 123
+select * from tbUser;
