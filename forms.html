@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>pagina de login</title>
+</head>
+<body>
+    <center>
+    <h2>Login</h2>
+    <?php if (isset($erro)) { ?>
+        <p><?php echo $erro; ?></p>
+    <?php } ?>
+    <form method="post" action="index.php">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="txtlogin" id="txtlogin" required><br><br>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" name="txtsenha" id="txtsenha" required><br><br>
+        
+        <input type="submit" value="Login">
+    </form>
+    </center>
+</body>
+</html>
